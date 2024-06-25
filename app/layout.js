@@ -1,7 +1,11 @@
-import { Inter } from "next/font/google";
+import { Inter , Questrial , Rubik_Mono_One, Unbounded} from "next/font/google";
 import "./globals.css";
+import clsx from "clsx";
 
+const unbounded = Unbounded({ subsets: ["latin"] });
+const questrial = Questrial({ subsets: ["latin"],weight:["400"]});
 const inter = Inter({ subsets: ["latin"] });
+const rubik_mono_one = Rubik_Mono_One({ subsets: ["latin"] ,weight:["400"]});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`clsx${unbounded.className} ${questrial.className} ${inter.className} ${rubik_mono_one.className} wrapper min-h-screen	flex flex-col`}>{children}</body>
     </html>
   );
 }

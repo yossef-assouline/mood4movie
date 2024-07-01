@@ -29,13 +29,10 @@ export const useStore = create((set) => ({
     movie_id:[],
     setId: (ids) => set({ ids }),
     randomMovie:{},
-    setRandomMovie: (randomMovie) => set({ ids }),
-    setRandomMovie: (trailerKey) => set((state) => ({
-      randomMovie: {
-        ...state.randomMovie,
-        trailer: `https://www.youtube-nocookie.com/embed/${trailerKey}`
-      }
-    }))
+    isLoading:false,
+    setIsLoading: (value) => set({ isLoading : value}),
+    
+    
   
   
 }))

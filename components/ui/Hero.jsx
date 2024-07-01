@@ -20,7 +20,6 @@ export const Hero = () => {
         happy, sad, adventurous, or anything in between, just click on the mood
         that matches how you're feeling, and we'll suggest the perfect movie to
         match.
-        
       </p>
 
       <Link href="/mood-picker" className="overflow-hidden flex justify-center items-center mt-16 font-questrial w-32  h-12 bg-red-700 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">

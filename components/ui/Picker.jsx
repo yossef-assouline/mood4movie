@@ -1,6 +1,6 @@
 import React, { useEffect , useState } from "react";
 import { useStore } from "../../state/state.store";
-import { fetchMovie,convertId } from "@/lib/movieUtils";
+import { fetchMovieAndDetails } from "@/lib/movieUtils";
 export const Picker = () => {
   const categories = [
     { name: "Scared😱" ,id:'27' },
@@ -29,7 +29,7 @@ export const Picker = () => {
             <button
               key={categorie.name}
               onClick={()=>{setMoodSelected(categorie.name)
-                fetchMovie(categorie.id)
+                fetchMovieAndDetails(categorie.id)
                               
               }}
               href="/mood-picker"

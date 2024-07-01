@@ -47,7 +47,7 @@ export default function Navbar() {
             <li
               className={`text-3xl relative after:bg-red-700 h-20 after:absolute after:h-1 after:w-0 after:bottom-0 flex items-center justify-start after:left-0 hover:after:w-full after:transition-all after:duration-300 `}
             >
-              <Link href="/" className="h-10 ml-4 tracking-tighter">
+              <Link href="/about" className="h-10 ml-4 tracking-tighter">
                 About
               </Link>
             </li>

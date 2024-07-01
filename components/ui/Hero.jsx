@@ -23,12 +23,12 @@ export const Hero = () => {
         
       </p>
 
-      <Link href="/mood-picker" class="overflow-hidden flex justify-center items-center mt-16 font-questrial w-32  h-12 bg-red-700 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">
+      <Link href="/mood-picker" className="overflow-hidden flex justify-center items-center mt-16 font-questrial w-32  h-12 bg-red-700 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">
         Start Now
-        <span class="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
-        <span class="absolute w-36 h-32 -top-8 -left-2 bg-red-700 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
-        <span class="absolute w-36 h-32 -top-8 -left-2 bg-red-400 rotate-12 transform scale-x-0 group-hover:scale-x-50 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
-        <span class="text-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2 left-0 z-10 w-full">
+        <span className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
+        <span className="absolute w-36 h-32 -top-8 -left-2 bg-red-700 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
+        <span className="absolute w-36 h-32 -top-8 -left-2 bg-red-400 rotate-12 transform scale-x-0 group-hover:scale-x-50 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+        <span className="text-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2 left-0 z-10 w-full">
           Start Now
         </span>
       </Link>

@@ -26,6 +26,7 @@ module.exports = {
  
   
         'sm': {'max': '650px'},
+        'min-sm': {'min': '650px'},
 
       }
     },

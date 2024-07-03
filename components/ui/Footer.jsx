@@ -1,20 +1,45 @@
 import React from "react";
 import Link from "next/link";
-import { Button } from "./button";
 
+import { usePathname } from "next/navigation";
 export const Footer = () => {
+  const pathname = usePathname();
   return (
-    <footer className="max-sm:h-36 w-full h-20 left-0 bottom-0  bg-red-700 bg-opacity-30  z-40 flex items-center flex-col justify-center mt-auto">
-        
+    
+    <footer className="max-sm:h-36 w-full h-20 left-0 bottom-0 bg-white/20 ring ring-black/5 shadow-2xl backdrop-blur-sm z-40 flex items-center flex-col justify-center mt-auto">
       <ul className="flex gap-8 mb-4">
         <li>
-          <Link href={"/"} className="hover:underline text-white">Home</Link>
+        {pathname === "/" ? (
+            ""
+          ) : (
+            <Link
+              href="/"
+              className="relative text-white text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+            >
+              Home
+            </Link>
+          )}
+          
         </li>
         <li>
-          <Link href={"/about"} className="hover:underline text-white">About</Link>
+        {pathname === "/mood-picker" ? (
+            ""
+          ) : (
+            <Link
+            href="/mood-picker"
+            className="text-white relative text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          >
+            Movies
+          </Link>
+          )}
         </li>
         <li>
-          <Link href={"/mood-picker"} className="hover:underline text-white">Find A movie</Link>
+        <Link
+            href="/about"
+            className="relative text-white text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          >
+            About
+          </Link>
         </li>
       </ul>
       <h1 className="text-white">Mood4Movie © 2024</h1>

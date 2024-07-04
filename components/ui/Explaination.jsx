@@ -5,7 +5,7 @@ export const Explaination = () => {
     <div className="flex flex-col items-center text-center mt-12 mb-8 ">
       <h1 className="text-[4vw] text-white">
         How it{" "}
-        <span className="relative whitespace-nowrap">
+        <span className="relative whitespace-nowrap hover:text-[4.5vw] duration-300">
           <span className="absolute bg-red-700 -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
           <span className="relative text-neutral text-white">Works?</span>
         </span>

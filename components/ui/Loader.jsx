@@ -2,26 +2,26 @@ import React from 'react'
 
 export const Loader = () => {
   return (
-    <div class="boxes">
-    <div class="box">
+    <div className="boxes">
+    <div className="box">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
     </div>
-    <div class="box">
+    <div className="box">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
     </div>
-    <div class="box">
+    <div className="box">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
     </div>
-    <div class="box">
+    <div className="box">
         <div></div>
         <div></div>
         <div></div>

@@ -13,21 +13,21 @@ export default function Navbar() {
   const toggleBoolean = () => {
     setIsToggled((prevValue) => !prevValue);
   };
-
+            
   return (
     <nav>
-      <div className="flex relative z-10 shadow-2xl h-16 ">
-        <Link href={"/"} className="text-2xl text-white self-center ml-4">
+      <div className="flex relative z-10 shadow-2xl max-sm:h-16 h-[10vh] ">
+        <Link href={"/"} className="max-sm:text-2xl lg:text-[2vw] max-xl:text-[2.5vw] text-white self-center ml-4 2xl:text-[1.3vw]">
           Mood<span className="text-red-700">4</span>Movie
         </Link>
 
-        <div className="max-sm:hidden flex gap-3 w-full justify-end mr-4 items-center text-md text-white">
+        <div className="max-sm:hidden max-lg:text-[2vw] max-xl:text-[1.5vw] 2xl:text-[1vw] xl:text-[1.5vw] flex gap-6 w-full justify-end mr-4 items-center text-md text-white">
           {pathname === "/" ? (
             ""
           ) : (
             <Link
               href="/"
-              className="relative text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+              className="relative max-lg:text-[2vw] max-sm:text-md 2xl:text-[1vw] max-xl:text-[1.5vw] w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
             >
               Home
             </Link>
@@ -38,14 +38,14 @@ export default function Navbar() {
           ) : (
             <Link
             href="/mood-picker"
-            className="relative text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+            className="relative max-lg:text-[2vw] max-xl:text-[1.5vw] 2xl:text-[1vw] max-sm:text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
           >
             Movies
           </Link>
           )}
           <Link
             href="/about"
-            className="relative text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+            className="relative max-sm:text-md w-fit block after:block 2xl:text-[1vw] after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
           >
             About
           </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
           </li>
           <li className="text-3xl relative after:bg-red-700 h-20 after:absolute after:h-1 after:w-0 after:bottom-0 flex items-center justify-start after:left-0 hover:after:w-full after:transition-all after:duration-700">
             <Link href="/mood-picker" className="h-10 ml-4 tracking-tighter">
-              Find a movie
+              Movies
             </Link>
           </li>
         </ul>

@@ -21,7 +21,7 @@ export const Picker = () => {
     <>
       <div className="flex flex-col items-center max-sm:h-[60vh]  justify-center sm:mb-24 sm:mt-24 max-sm:mb-4">
         <h1 className="text-white text-2xl sm:-mb-8">Pick A genre:</h1>
-        <div className="flex flex-wrap gap-4 justify-center ">
+        <div className="flex flex-wrap gap-4 justify-center  sm:pl-2 sm:pr-2">
           {categories.map((categorie) => (
             <button
               key={categorie.name}
@@ -30,7 +30,7 @@ export const Picker = () => {
                 fetchMovieAndDetails(categorie.id);
               }}
               href="/mood-picker"
-              className="overflow-hidden flex justify-center items-center mt-16 font-questrial sm:w-48 sm:h-16 w-32  h-12 bg-red-700 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
+              className="overflow-hidden hover:scale-105 duration-300 flex justify-center items-center mt-16 font-questrial sm:w-48 sm:h-16 w-32  h-12 bg-red-700 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
             >
               {categorie.name}
               <span className="absolute w-36 h-32 -top-16 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-150 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>

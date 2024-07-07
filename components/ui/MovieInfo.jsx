@@ -36,14 +36,14 @@ export const MovieInfo = () => {
               <div
                 className={`${
                   randomMovie.trailer === ""
-                    ? "rounded-xl max-sm:w-[40vw] w-[30vh] "
+                    ? "rounded-xl max-sm:w-[40vw] w-[40vh] "
                     : "youtube-wrapper"
                 } overflow-hidden w-full mt-8 mb-4 bg-white/10 relative`}
               >
                 {randomMovie.trailer === "" ? (
                   <div className="">
                     <Image
-                      className="rounded-xl max-sm:w-full w-[30vh]  "
+                      className="rounded-xl max-sm:w-full w-[40vh]"
                       src={randomMovie.poster}
                       width={200}
                       height={100}
@@ -59,26 +59,26 @@ export const MovieInfo = () => {
                   ></iframe>
                 )}
               </div>
-              <h1 className="text-center mt-4 text-white text-xl sm:text-[3vw] lg:leading-tight lg:text-[1.5vw]">
+              <h1 className="text-center mt-4 text-white text-xl sm:text-[3vw] lg:leading-tight font-poppins font-bold lg:text-[1.5vw]">
                 {randomMovie.title}
               </h1>
               <ul className="flex gap-8 text-white">
-                <li key={"date"} className="sm:text-[2vw] lg:text-[1vw]">
+                <li key={"date"} className="sm:text-[2vw] font-poppins lg:text-[1vw]">
                   {randomMovie.release_date}
                 </li>
 
-                <li key={"review"} className="sm:text-[2vw] lg:text-[1vw]">
+                <li key={"review"} className="sm:text-[2vw] font-poppins lg:text-[1vw]">
                   {randomMovie.review}
                 </li>
               </ul>
-              <ul className="flex flex-wrap gap-2 justify-center">
+              <ul className="flex flex-wrap gap-2 font-poppins font-bold justify-center">
                 {randomMovie.tags?.map((tag) => (
                   <li key={tag}>
                     <Badge variant="destructive">{tag}</Badge>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-center text-white text-xs mb-4">
+              <p className="mt-4 text-center text-white font-poppins font-bold text-xs mb-4">
                 {randomMovie.overview}
               </p>
             </div>

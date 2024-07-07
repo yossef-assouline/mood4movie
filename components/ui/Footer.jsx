@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     
     <footer className="max-sm:h-36 w-full h-20 left-0 bottom-0 bg-white/20 ring ring-black/5 shadow-2xl backdrop-blur-sm z-40 flex items-center flex-col justify-center mt-auto">
-      <ul className="flex gap-8 mb-4">
+      <ul className="flex mb-4 font-poppins gap-8 font-bold">
         <li>
         {pathname === "/" ? (
             ""
@@ -42,7 +42,7 @@ export const Footer = () => {
           </Link>
         </li>
       </ul>
-      <h1 className="text-white">Mood4Movie © 2024</h1>
+      <h1 className="text-white font-poppins">Mood4Movie © 2024</h1>
     </footer>
   );
 };

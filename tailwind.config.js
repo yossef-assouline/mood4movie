@@ -34,7 +34,9 @@ module.exports = {
       fontFamily: {
         questrial: ['Questrial' , 'sans-serif'],
         rubik: ['Rubik_Mono_One' , 'sans-serif'],
-        unbounded: ['Unbounded' , 'sans-serif']
+        unbounded: ['Unbounded' , 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+        rubik_mono_one:['var(--font-rubik)', 'sans-serif']
        },
       colors: {
         border: "hsl(var(--border))",

@@ -55,4 +55,24 @@ cd mood4movie
 ```
 
 
-  
+in the .env.example file rename it to .env.local and replace with your api key.
+```
+NEXT_PUBLIC_TMDB_API_KEY="YOUR TMDB API KEY"
+```
+
+#### Client & BackEnd
+
+Install the required dependencies using npm or yarn:
+
+```bash
+npm install
+# or
+yarn install
+```
+### Run the app 
+```
+npm run dev
+# or
+yarn dev
+```
+### Happy Coding!  

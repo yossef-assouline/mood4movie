@@ -1,11 +1,6 @@
 # Mood4Movie
 
-![logo2](https://github.com/dachico/BookIt/assets/151663998/bd719e5b-fa7a-42fd-8776-f271528737ef)
 
-
-
-![VERSION](https://img.shields.io/badge/VERSION-1.0.0-blue)
-![LICENSE](https://img.shields.io/badge/LICENSE-MIT-blue)
 
 ## About The Project
 

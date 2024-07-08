@@ -36,7 +36,7 @@ export const MovieInfo = () => {
               <div
                 className={`${
                   randomMovie.trailer === ""
-                    ? "rounded-xl max-sm:w-[40vw] w-[40vh] "
+                    ? "rounded-xl max-sm:w-[40vw] lg:w-[40vh] "
                     : "youtube-wrapper"
                 } overflow-hidden w-full mt-8 mb-4 bg-white/10 relative`}
               >

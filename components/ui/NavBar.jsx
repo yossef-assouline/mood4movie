@@ -55,14 +55,15 @@ export default function Navbar() {
             Movies
           </Link>
           )}
-          <Link
-            id="nav-about"
-            href="/about"
-            className="relative max-sm:text-md opacity-0 translate-x-20 w-fit block after:block 2xl:text-[1vw] after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-          >
-            About
-          </Link>
-
+          {pathname === "/about" ? 
+          ""
+          :<Link
+          id="nav-about"
+          href="/about"
+          className="relative max-sm:text-md opacity-0 translate-x-20 w-fit block after:block 2xl:text-[1vw] after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        >
+          About
+        </Link>}
         
         </div>
 

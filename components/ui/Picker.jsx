@@ -33,14 +33,14 @@ export const Picker = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center h-[50vh]  justify-center sm:mb-24  max-sm:mb-4">
+      <div className="flex flex-col items-center h-[50vh]  justify-center sm:mb-24  max-sm:mb-4 ">
         <h1
           
-          className="text-white opacity-0 picker-h1 max-sm:text-[4vw] text-[4vw] mt-24 font-poppins font-bold sm:-mb-8"
+          className="text-white opacity-0 picker-h1 max-sm:text-[4vw] text-[3vw] mt-24 font-poppins font-bold max-sm:mb-2 "
         >
           Pick a genre:
         </h1>
-        <div className="flex flex-wrap gap-4 justify-center  sm:pl-2 sm:pr-2">
+        <div className="flex flex-wrap gap-4 justify-center max-sm:mb-24 sm:pl-2 lg:mb-32 sm:pr-2  xl:mt-16">
           {categories.map((categorie) => (
             <button
               key={categorie.name}
@@ -49,7 +49,7 @@ export const Picker = () => {
                 fetchMovieAndDetails(categorie.id);
               }}
               href="/mood-picker"
-              className="overflow-hidden font-poppins opacity-0 picker-button hover:scale-105 duration-300 flex justify-center items-center mt-16  sm:w-48 sm:h-16 w-32  h-12 bg-red-700 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
+              className="overflow-hidden font-poppins opacity-0 picker-button hover:scale-105 duration-300 flex justify-center items-center mt-4  sm:w-48 sm:h-16 w-32  h-12 bg-red-700 text-white border-none rounded-md text-md font-bold cursor-pointer relative z-10 group"
             >
               {categorie.name}
               <span className="absolute w-36 h-32 -top-16 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-150 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>

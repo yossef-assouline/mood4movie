@@ -34,12 +34,15 @@ export const Footer = () => {
           )}
         </li>
         <li>
-        <Link
-            href="/about"
-            className="relative text-white text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-          >
-            About
-          </Link>
+        {pathname === "/about" ? 
+          ""
+          :<Link
+          id="nav-about"
+          href="/about"
+          className="text-white relative text-md w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        >
+          About
+        </Link>}
         </li>
       </ul>
       <h1 className="text-white font-poppins">Mood4Movie © 2024</h1>
